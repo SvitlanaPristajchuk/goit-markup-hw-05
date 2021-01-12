@@ -19,7 +19,7 @@
 
         <ul class="navigation-list-header">
             <li class="navigation-list-header-item">
-                <a class="navigation-list-link current" href="./index.html">Студия</a>
+                <a class="navigation-list-link" href="./index.html">Студия</a>
             </li>
             <li class="navigation-list-header-item">
                 <a class="navigation-list-link" href="./portfolio.html">Портфолио</a>
@@ -49,7 +49,7 @@
          <section class="hero">
             <div class="hero-black-section">
                 <h1 class="main-title">Эффективные решения <br/> для вашего бизнеса</h1>
-                <button class="modal-btn" type="button">Заказать услугу</button>
+                <button class="modal-btn" type="button" data-modal-open>Заказать услугу</button>
         </section>
     <!--Details-->
         <section class="details">
@@ -102,12 +102,15 @@
             <ul class="list-pictures-work">
                 <li class="list-pictures-work-item">
                     <img src="./images/img.jpg" alt="человек работает за пк" width="370" height="294">
+                    <p class="additional-description">Десктопные приложения</p>
                 </li> 
                 <li class="list-pictures-work-item">
                     <img src="./images/img-2.jpg" alt="человек работает на телефоне" width="370" height="294">
+                    <p class="additional-description">Мобильные приложения</p>
                 </li>
                 <li class="list-pictures-work-item">
                     <img src="./images/img-3.jpg" alt="человек работает на планшете" width="370" height="294">
+                    <p class="additional-description">Дизайнерские решения</p>
                 </li>
             </ul>
         </div>
@@ -381,6 +384,15 @@
         </address>
     </div>
 </footer>
-
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>
+            <svg class="close-btn_icon" width="18" height="18">
+                <use href="./images/sprite_1.svg#icon-close-black-18dp-2-1"></use>
+            </svg>
+        </button>
+    </div>
+</div>
+<script src="./js/modal.js"></script>
 </body>
 </html>
