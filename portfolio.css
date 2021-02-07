@@ -21,10 +21,6 @@
   align-items: center;
 }
 
-.navigation-list-link .current {
-  color: var(--accent-color);
-}
-
 .contact {
   display: flex;
   align-items: center;
@@ -105,6 +101,26 @@ body {
   margin-right: 50px;
 }
 
+.navigation-list-link-first {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+  color: #212121;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigation-list-link-second {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+  color: #212121;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .navigation-list-link {
   font-weight: 500;
   font-size: 14px;
@@ -113,6 +129,29 @@ body {
   color: #212121;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigation-list-header-item {
+  position: relative;
+}
+
+.navigation-list-link-second:hover, .navigation-list-link-second:focus {
+  color: var(--accent-color);
+}
+
+.navigation-list-link:hover, .navigation-list-link:focus {
+  color: var(--accent-color);
+}
+
+.navigation-list-link-second:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background: #2196F3;
+  border-radius: 2px;
+  bottom: -32px
 }
 
 .top-heder .contact {
@@ -168,7 +207,7 @@ body {
   font-style: normal;
 }
 
-.navigation-list-link:hover, .navigation-list-link:focus {
+.navigation-list-link-first:hover, .navigation-list-link-first:focus {
   color: var(--accent-color);
 }
 
@@ -188,6 +227,17 @@ li {
   width: 1170px;
   margin: 0 auto;
 }
+
+/*.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}*/
 
 /*==========end-header=========*/
 
